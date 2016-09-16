@@ -38,45 +38,5 @@ public class MainActivity extends AppCompatActivity {
         book = (Button) findViewById(R.id.hbook);
         kota = (Spinner)findViewById(R.id.spinner);
 
-        book.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                String hemail = email.getText().toString();
-                String haddress = address.getText().toString();
-                String hservice ="\n\n SERVICE:\n";
-                String payment= null;
-                int startlen = hservice.length();
-
-                if(ride.isChecked()) hservice+=ride.getText()+"\n";
-                if(food.isChecked()) hservice+=food.getText()+"\n";
-                if(mart.isChecked()) hservice+=mart.getText()+"\n";
-
-                if(cod.isChecked())
-                {
-                    payment = cod.getText().toString();
-                }
-                else if(transfer.isChecked());
-                {
-                    payment = transfer.getText().toString();
-                }
-
-                if(hservice.length()== startlen) hservice+="Tidak Memilih";
-
-
-                hasill.setText("EMAIL:\n"+hemail+"\nADDRESS:\n"+haddress
-                        +hservice+kota.getSelectedItem().toString()+"\nPAYMENT\n"+payment);
-
-
-
-
-
-
-
-
-            }
-        });
-
-
 }
 }
