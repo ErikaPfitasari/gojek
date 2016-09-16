@@ -64,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
                 if(hservice.length()== startlen) hservice+="Tidak Memilih";
 
 
+                hasill.setText("EMAIL:\n"+hemail+"\nADDRESS:\n"+haddress
+                        +hservice+kota.getSelectedItem().toString()+"\nPAYMENT\n"+payment);
+
+
 
 
 
