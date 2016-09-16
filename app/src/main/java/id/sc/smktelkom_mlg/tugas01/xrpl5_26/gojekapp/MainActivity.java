@@ -49,29 +49,6 @@ public class MainActivity extends AppCompatActivity {
                 int startlen = hservice.length();
 
 
-                if(ride.isChecked()) hservice+=ride.getText()+"\n";
-                if(food.isChecked()) hservice+=food.getText()+"\n";
-                if(mart.isChecked()) hservice+=mart.getText()+"\n";
-
-                if(cod.isChecked())
-                {
-                    payment = cod.getText().toString();
-                }
-                else if(transfer.isChecked());
-                {
-                    payment = transfer.getText().toString();
-                }
-
-                if(hservice.length()== startlen) hservice+="Tidak Memilih";
-
-
-
-
-
-
-                hasill.setText("EMAIL:\n"+hemail+"\nADDRESS:\n"+haddress
-                        +hservice+kota.getSelectedItem().toString()+"\nPAYMENT\n"+payment);
-
 
 
 
